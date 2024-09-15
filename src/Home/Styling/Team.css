@@ -1,0 +1,21 @@
+.Team{
+    margin: 60px auto;
+}
+
+.Team h1{
+    text-align: center;
+}
+
+.members{
+    padding: 0 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 30px;
+    margin: 25px auto;
+    justify-content: center;
+}
+
+.slick-slider button{
+    background-color: grey;
+    border-radius: 50%;
+}

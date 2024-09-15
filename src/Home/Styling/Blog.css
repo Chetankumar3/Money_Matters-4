@@ -1,0 +1,28 @@
+.blog{
+    background-color: rgb(7, 0, 27);
+    color: white;
+    padding: 40px 8%;
+}
+
+.section1, .section2{    
+    display: flex;
+    align-content: center;
+    margin: 50px 0;
+}
+
+.title{
+    min-width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1{
+    text-align: center;
+    font-size: 68px;
+    font-weight: 650;
+}
+
+.text p{
+    font-size: 16px;
+}
