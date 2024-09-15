@@ -1,21 +1,18 @@
 .member{
-    width: 200px;
-    background-color: #012D01;
-    padding-top: 13px;
-    padding-bottom: 8px;
-    color: white;
+    padding-bottom: 20px;
+    /* width: 270px; */
+    box-shadow: 0 0 12px 6px rgba(63, 63, 63, 0.15);
 }
 
 .photo{
-    width: 86%;
-    margin: 0 auto;
+    width: 270px;
+    height: 360px;
     overflow: hidden;
-    border: 1px solid white;
-    height: 220px;
 }
 
 .photo img{
-    width: 100%;
+    padding: 0;
+    width: 270px;
     transition: transform 0.6s ease-in-out 0s;
 }
 
@@ -23,27 +20,26 @@
     transform: scale(1.15);
 }
 
-.details h2{
-    font-family: Montserrat;
-    font-size: max(0.8vw,12px);
-    font-weight: 600;
-    width: 86%;
-    margin: 10px auto 2px auto;
+.details{
+    padding-left: 8px;
 }
 
 .name{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 4px auto 5px auto;
-    width: 86%;
+    font-size: max(1.4vw,18px);
+    margin-top: 10px;
+    font-weight: 500;
 }
 
-.name h3{
-    width: 86%;
-    margin: 0 auto;
-    font-family: Montserrat;
-    color: rgb(92, 240, 36);
-    font-size: max(0.77vw,10px);
-    font-weight: 300;
+.member h3{
+    color: rgb(107, 107, 107);
+    font-size: max(1.15vw,15px);
+    font-weight: 640;
+}
+
+.logos{
+    display: flex;
+}
+
+.logos img{
+    margin-right: 4px;
 }

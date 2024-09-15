@@ -1,22 +1,18 @@
 import React from 'react'
 import Welcome from './Small components/Welcome'
+import Sub from './Small components/sub'
 import './Styling/About.css'
+import Reactt, { forwardRef } from "react";
 
-function About() {
+const About = forwardRef((props, ref) => {
   return (
-    <div className='About'>
+    <div ref={ref} className='About'>
         <div className="text">
-          <Welcome text="ABOUT US"/>
-
-          <p className='first'>At Money Matters IIITNR, our mission is to simplify the complexities of personal finance and investing. We provide a collaborative platform where students can access educational resources and apply them to real-world financial scenarios.</p>
-          <p>Our goal is to foster financial literacy and build a community of like-minded individuals passionate about achieving financial growth and success. By bridging the gap between finance and technology, we equip our members with the tools and knowledge to navigate today's ever-evolving financial landscape. Join us as we learn, grow, and thrive together on the path to financial empowerment!</p>
-
-          <div className="grp">
-            <img src="/group.jpg" alt="Group Photo" />
-          </div>
+            <Welcome text="About Us"/>
+            <Sub className="sub" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quo laboriosam cupiditate voluptatibus. Cupiditate consequatur cum, perferendis vero quasi fuga amet dolor, cumque aliquam est voluptatibus placeat sit. Architecto vel harum praesentium saepe consequuntur ipsum sint voluptate quia fuga necessitatibus tenetur dolore, exercitationem cupiditate sequi quo quibusdam mollitia autem consequatur. Doloribus voluptatum sapiente cumque laudantium repudiandae veritatis excepturi ut eius. Esse, quasi autem similique, eos ad praesentium, nemo cumque maiores totam nesciunt accusantium quisquam assumenda quo doloremque velit debitis ab quod dolores accusamus mollitia quibusdam. Reprehenderit sint doloribus dolores omnis odit nobis quaerat et porro vel, sunt magni optio. Fugit, dignissimos?" /> 
         </div>
     </div>
   )
-}
+});
 
 export default About

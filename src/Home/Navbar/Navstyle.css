@@ -11,7 +11,6 @@
     position: absolute;
     display: inline-block;
     width: max(7.5vw,100px);
-    user-select: none;
     margin-left: 25px;
 }
 
@@ -45,3 +44,15 @@
     line-height: 19.5px;
     text-align: center;
 }
+/* @media(max-width:426px){
+    .Logo{
+        width: 4em;
+    }
+    .menu{
+        margin: 0 8em;
+        width: 10em;
+    }
+    .menu Button{
+        font-size: 0.6em;
+    }
+} */

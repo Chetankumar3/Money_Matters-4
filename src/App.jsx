@@ -1,21 +1,23 @@
 import React from 'react'
 import Home from './Home/Home.jsx'
-// import { createBrowserRouter , RouterProvider } from 'react-router-dom';
+import Navbar from './Home/Navbar/Navbar.jsx';
+import About from './Home/About.jsx';
+import { createBrowserRouter , RouterProvider } from 'react-router-dom';
 
 function App() {
   // const router=createBrowserRouter([
-  //   {
-  //     path:"/Gallery",
-  //     element:<><Navbar /><Gallery/></>
-  //   },
+  //   // {
+  //   //   path:"/Gallery",
+  //   //   element:<><Navbar /><Gallery/></>
+  //   // },
   //   {
   //     path:"/",
   //     element:<><Home/></>
   //   },
   //   {
   //     path:"/About",
-  //     element:<><Navbar /><About/></>
-  //   },
+  //     element:<><About/></>
+  //   }
   //   {
   //     path:"/Events",
   //     element:<><Navbar /><Events/></>
@@ -27,6 +29,7 @@ function App() {
   return (
     <div> 
       {/* <RouterProvider router={router}/> */}
+      {/* <Navbar /> */}
       <Home/>
     </div>
   )

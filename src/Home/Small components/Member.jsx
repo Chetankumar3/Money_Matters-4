@@ -6,20 +6,19 @@ import LinkedIn from './Icons/LinkedIn.jsx'
 function App({source, name, position, insta, In}){
   return (
     <div className='member'>
-      <div className="photo">
-        <img src={source} alt="Photo" />
-      </div>
-
-      <div className="details">
-        <h2>{name}</h2>
-
-        <div className="name">
-          <h3>{position}</h3>
-
-          <Insta Link={insta} />
-          <LinkedIn LinkedIn={In} />
+        <div className="photo">
+            <img src={source} alt="Photo" />
         </div>
-      </div>
+
+        <div className="details">
+            <h2 className='name'>{name}</h2>
+            <h3>{position}</h3>
+
+            <div className="logos">
+                <Insta />
+                <LinkedIn />
+            </div>
+        </div>
     </div>
   )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Button({text,url}) {
+function Button({text,url,onclick}) {
   return (
     <a className='Link' href={url}>
-      <button>{text}</button>
+      <button onClick={onclick}>{text}</button>
     </a>
   );
 }

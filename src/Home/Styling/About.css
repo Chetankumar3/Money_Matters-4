@@ -1,43 +1,23 @@
 .About{
-    padding: 0 10%;
+    background-image: url("../../../public/rand_img.jpg");
 }
 
-.text p{
-    font-family: Montserrat;
-    color: white;
-    font-weight: 200;
-    line-height: 28px;
-    letter-spacing: 1.3px;
-    font-size: max(1.2vw, 14px);
+.About .text{
+    padding: 25px 5% 25px 8%;
+    width: 50vw;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
-.first{
-    margin: 24px 0;
+.text h1{
+    text-align: left;
 }
 
-.grp{
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
+.text .bar{
+    margin: 0;
 }
 
-.grp img{
-    width: 80%;
-    border: 6px solid #28FB75;
-    object-fit: contain;
-}
-
-@media screen and (max-width: 600px) {
-    .About{
-        padding: 0 6%;
-    }
-
-    .text p{
-        letter-spacing: normal;
-        line-height: 22px;
-    }
-
-    .grp img{
-        width: 83vw;
-    }
+.text h3{
+    font-size: 18px;
+    text-shadow: 0 0 3px rgba(62, 62, 62, 0.7);
+    text-align: justify;
 }
