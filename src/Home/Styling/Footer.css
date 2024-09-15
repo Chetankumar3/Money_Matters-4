@@ -1,0 +1,38 @@
+Footer{
+    margin-top: 120px;
+    padding: 0 8%;
+}
+
+.content{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    gap: 20px;
+}   
+
+.content h2{
+    font-family: Montserrat;
+    font-weight: 200;
+    color: #28FB75;
+    margin-bottom: 6px;
+}
+
+.part1 a, .part2 p{
+    font-family: Montserrat;
+    text-decoration: none;
+    color: white;
+}
+
+.links{
+    margin-top: 20px;
+}
+
+.part2{
+    width: 300px;
+}
+
+.part3{
+    width: 346px;
+    height: 177px;
+    border-radius: 15px;
+}

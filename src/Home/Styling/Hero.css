@@ -1,0 +1,37 @@
+.Hero{
+    position: relative;
+    height: 100vh;
+}
+
+.Hero1{
+    position: absolute;
+    background-color: black;
+    height: 55vh;
+}
+
+.center{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.in{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 28px 18px rgba(0, 0, 0, 0.12);
+    min-height: 240px;
+    width: max(50vw, 420px);
+    padding: 12px;
+}
+
+.in h1{
+    font-size: max(3.5vw, 36px);
+}
+
+.Hero2{
+    position: absolute;
+    height: 45vh;
+}
