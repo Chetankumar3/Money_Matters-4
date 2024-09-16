@@ -9,15 +9,16 @@
 
 .outer{
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .photos{
     width: fit-content;
-    margin: 0 auto;
+    margin: 30px auto;
     display: flex;
-    gap: 24px;
+    gap: 30px;
     justify-content: space-between;
+    animation: scroller 18s linear 0s infinite normal;
 }
 
 .photos *{
@@ -25,6 +26,13 @@
     border-radius: 16px;
 }
 
-.slick-track div{
-    width: fit-content;
+.outer:hover .photos{
+    animation-play-state: paused;
+}
+
+@keyframes scroller {
+    from{}    
+    to{
+        transform: translateX(-100%);
+    }
 }

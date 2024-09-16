@@ -1,6 +1,7 @@
 import Navbar from './Navbar/Navbar.jsx'
 import Hero from './Hero'
 import About from './About.jsx'
+import Events from './Events.jsx'
 import Gallery from './Gallery.jsx'
 import Team from './Team.jsx'
 import Footer from './Footer.jsx'
@@ -13,6 +14,7 @@ const Home = forwardRef((props, ref) => {
       <Navbar />
       <Hero />
       <About />
+      <Events />
       <Gallery />
       <Team />
       <Footer />

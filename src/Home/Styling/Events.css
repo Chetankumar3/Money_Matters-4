@@ -1,0 +1,14 @@
+.Events{
+    padding: 0 8%;
+    margin: 90px 0;
+}
+
+.h2{
+    font-family: Montserrat;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    font-size: max(24px,2vw);
+    font-weight: 300;    
+    letter-spacing: 1.1px;
+}

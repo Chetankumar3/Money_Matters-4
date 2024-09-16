@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import Home from './Home/Home.jsx'
+import Loading from './Home/Loading.jsx'
 // import { createBrowserRouter , RouterProvider } from 'react-router-dom';
 
-function App() {
+const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a loading process (e.g., data fetching)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // 3 seconds for demo purposes
+
+    return () => clearTimeout(timer);
+  }, []);
   // const router=createBrowserRouter([
   //   {
   //     path:"/Gallery",
@@ -27,7 +38,7 @@ function App() {
   return (
     <div> 
       {/* <RouterProvider router={router}/> */}
-      <Home/>
+      {loading ? <Loading /> : <Home/>}
     </div>
   )
 }

@@ -1,31 +1,3 @@
-// import React from 'react'
-// import Navbar from './Navbar/Navbar.jsx'
-// import Welcome from './Small components/Welcome.jsx'
-// import Sub from './Small components/sub.jsx'
-// import './Styling/Hero.css'
-
-// function Hero() {
-//   return (
-//     <div className='Hero'>
-//         <div className='Hero1'>
-//         <Navbar />
-//       </div>
-
-//       {/* <div className="center">
-//         <div className="in">
-//           <Welcome text1="Welcome to 'Money Matters'"/>
-//           <Bar />
-//           <Sub text1="Where Education Meets Financial Empowerment"/>
-//         </div>
-//       </div> */}
-
-//       <div className="Hero2"></div>
-//     </div>
-//   )
-// }
-
-// export default Hero
-
 import Navbar from "./Navbar/Navbar.jsx";
 import Welcome from "./Small components/Welcome.jsx";
 import Sub from "./Small components/sub.jsx";
@@ -36,14 +8,6 @@ import React, { useRef } from "react";
 
 function Hero() {
   const sectionRef = useRef(null);
-
-  // Function to scroll to the section on button click
-  // const scrollToSection = () => {
-  //   sectionRef.current.scrollIntoView({
-  //     behavior: "smooth",
-  //     block: "start",
-  //   });
-  // };
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -73,7 +37,9 @@ function Hero() {
           <img src="public\Zerodha_logo_1.png" alt="" className="zerodha" />
           {/* </div> */}
         </div>
+        
         <img src="/bgg.png" alt="" className="theme" />
+
         <button onClick={() => scrollToSection('about-section')} className="explore">
           {/* <Button url="/About"/> */}
           <img src="/explore.png" alt="" />

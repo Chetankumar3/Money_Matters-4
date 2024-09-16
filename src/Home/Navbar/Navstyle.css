@@ -92,6 +92,12 @@
     line-height: 19.5px;
     text-align: center;
 }
+
+.menu button:hover{
+    cursor: pointer;
+    color: #88ff98;
+}
+
 /* @media(max-width:426px){
     .Logo{
         width: 4em;
