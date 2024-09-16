@@ -1,11 +1,11 @@
-import React from 'react'
 import './Styling/Team.css'
 import Member from './Small components/Member.jsx'
 import Welcome from './Small components/Welcome.jsx'
+import React, { forwardRef } from "react";
 
-function App() {
+const Team = forwardRef((props, ref) => {
   return (
-    <div className='Team'>
+    <div id="team-section" ref={ref} className='Team'>
       <Welcome text="TEAM" className="heading" />
 
       <div className="members">
@@ -78,6 +78,6 @@ function App() {
       </div>
     </div>
   )
-}
+});
 
-export default App
+export default Team

@@ -1,10 +1,10 @@
-import React from 'react'
 import Welcome from './Small components/Welcome'
 import './Styling/About.css'
+import React, { forwardRef } from "react";
 
-function About() {
+const About = forwardRef((props, ref) => {
   return (
-    <div className='About'>
+    <div id="about-section" ref={ref} className='About'>
         <div className="text">
           <Welcome text="ABOUT US"/>
 
@@ -17,6 +17,6 @@ function About() {
         </div>
     </div>
   )
-}
+});
 
 export default About

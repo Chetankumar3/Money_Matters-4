@@ -1,14 +1,16 @@
-import React from 'react'
+import Navbar from './Navbar/Navbar.jsx'
 import Hero from './Hero'
 import About from './About.jsx'
 import Gallery from './Gallery.jsx'
 import Team from './Team.jsx'
 import Footer from './Footer.jsx'
 import './Styling/Home.css'
+import React, { forwardRef } from "react";
 
-function Home() {
+const Home = forwardRef((props, ref) => {
   return (
-    <div className='main'>
+    <div id='home-section' className='main'>
+      <Navbar />
       <Hero />
       <About />
       <Gallery />
@@ -16,6 +18,6 @@ function Home() {
       <Footer />
     </div>
   );
-}
+});
 
 export default Home

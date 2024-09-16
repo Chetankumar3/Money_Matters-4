@@ -1,6 +1,6 @@
-import React from 'react'
 import Welcome from './Small components/Welcome'
 import './Styling/Gallery.css'
+import React, { forwardRef } from "react";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -9,9 +9,10 @@ import "slick-carousel/slick/slick-theme.css";
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div
+    <img
+      src='/right.png'
       className={className}
-      style={{ ...style, display: "block", background: "red" }}
+      style={{ ...style, width:"20px", display: "block"}}
       onClick={onClick}
     />
   );
@@ -20,15 +21,16 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
-    <div
+    <img
+      src='/left.png'
       className={className}
-      style={{ ...style, display: "block", background: "green" }}
+      style={{ ...style, width:"20px", display: "block"}}
       onClick={onClick}
     />
   );
 }
 
-function Gallery() {
+const Gallery = forwardRef((props, ref) => {
   const settings = {
     className: "center",
     centerMode: true,
@@ -40,7 +42,7 @@ function Gallery() {
     prevArrow: <SamplePrevArrow />
   };
   return (
-    <div className='Gallery'>
+    <div id='gallery-section' className='Gallery'>
       <Welcome text="GALLERY" />
 
       <div className="outer">
@@ -63,6 +65,6 @@ function Gallery() {
       </div>
     </div>
   )
-}
+});
 
 export default Gallery

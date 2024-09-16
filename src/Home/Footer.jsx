@@ -1,12 +1,12 @@
-import React from 'react'
 import Welcome from './Small components/Welcome'
 import Insta from './Small components/Icons/insta'
 import LinkedIn from './Small components/Icons/LinkedIn'
 import './Styling/Footer.css'
+import React, { forwardRef } from "react";
 
-function Footer() {
+const Footer = forwardRef((props, ref) => {
     return (
-        <footer className='container'>
+        <footer id='footer-section' className='container'>
             <Welcome text="CONTACT US" />
 
             <div className="content">
@@ -34,6 +34,6 @@ function Footer() {
             </div>
         </footer>
     )
-}
+});
 
 export default Footer
