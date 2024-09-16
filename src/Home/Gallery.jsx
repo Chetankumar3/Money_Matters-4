@@ -6,16 +6,26 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function LeftArrow(){
-  return(
-    <img className='arrow' src="/left.png" alt="Left" />
-  )
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "red" }}
+      onClick={onClick}
+    />
+  );
 }
 
-function RightArrow(){
-  return(
-    <img className='arrow' src="/right.png" alt="Right" />
-  )
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "green" }}
+      onClick={onClick}
+    />
+  );
 }
 
 function Gallery() {
@@ -26,8 +36,8 @@ function Gallery() {
     centerPadding: "60px",
     slidesToShow: 3,
     speed: 500,
-    nextArrow: <LeftArrow />,
-    prevArrow: <RightArrow />
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
   };
   return (
     <div className='Gallery'>
